@@ -3,6 +3,33 @@
 A real-time data pipeline that streams weather readings through Apache Kafka
 and lands them in S3 as JSON, ready for Glue + Athena analysis.
 
+## Architecture
+
+```
+📄 CSV Dataset → 🐍 Python Producer → 🔀 Apache Kafka → 🐍 Python Consumer → 🪣 AWS S3
+                                        (Docker)                                 │
+                                                                                  ▼
+                                                                       🕷️  AWS Glue Crawler
+                                                                                  │
+                                                                                  ▼
+                                                                       📚 AWS Glue Catalog
+                                                                                  │
+                                                                                  ▼
+                                                                       🔎 Amazon Athena
+                                                                          (SQL Query Engine)
+```
+
+## Tech Stack
+
+- Python 3.12
+- Apache Kafka (via Docker)
+- kafka-python-ng
+- pandas
+- AWS S3
+- AWS Glue
+- Amazon Athena
+- Docker & Docker Compose
+
 ```
 weather_kafka_pipeline/
 ├── data/
