@@ -1,0 +1,4 @@
+kafka-python==2.0.2
+boto3
+pandas
+s3fs

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment / secrets
+.env
+*.pem
+*.csv.aws
+.aws/
+credentials
+aws_credentials*
+
+# Logs
+*.log
+
+# Large data files
+data/*.csv
+
+# Editors
+.vscode/
+.idea/
