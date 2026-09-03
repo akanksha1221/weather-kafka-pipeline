@@ -163,3 +163,10 @@ Logs are written to `producer.log` and `consumer.log`.
   ```bash
   aws s3 ls s3://MY_BUCKET_NAME/weather_data/ --recursive
   ```
+## Live API
+
+Base URL: https://YOUR-API-ID.execute-api.us-east-1.amazonaws.com
+
+GET /weather              — latest weather records
+GET /weather?city=Mumbai  — filter by city
+GET /weather/summary      — total records count
