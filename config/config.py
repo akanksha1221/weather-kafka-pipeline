@@ -7,3 +7,6 @@ AWS_REGION = "ap-south-1"
 
 CSV_PATH = "data/weather_data.csv"
 S3_PREFIX = "weather_data"
+
+# config/config.py — add this line
+API_URL = 'https://YOUR-API-ID.execute-api.us-east-1.amazonaws.com'
